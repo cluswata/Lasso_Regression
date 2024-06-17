@@ -1,0 +1,12 @@
+Lasso Regression features selection with K-fold Cross-Validation: A Statistical model to predict 2-days net change in stocks prices.
+
+Background:
+Least Absolute Shrinkage and Selection Operator (Lasso), is a type of linear regression that adds a penalty to the standard sum of squared residuals used in ordinary least squares (OLS) regression. 
+ 
+This penalty, often referred to as L1 regularization, helps to address some common issues in linear regression models including handling Multicollinearity by shrinking the coefficients of correlated variables towards zero. Also, Lasso prevents Overfitting, which occurs when a model learns too much noise from the training data, by penalizing the absolute size of the coefficients (L1 penalty) in high dimensional datasets. 
+Furthermore, Lasso offers several advantages including but not limited to: Features Selection in high-dimensional data and improving model interpretability as it focuses only on the most relevant predictors from a large pool of predictors that have a meaningful impact on the target variable. 
+
+In machine learning and statistics, K-fold cross-validation is a resampling technique used to evaluate the performance of a model. It involves splitting the dataset into K subsets (or folds) of approximately equal size. The model is trained K times using different subsets of the data as the training set each time. For each iteration, one of the K subsets is used as the validation set, and the remaining K-1 subsets used as the training set, each time computing the mean squared error, a performance evaluation metrics.
+K-fold cross-validation helps in understanding the bias-variance trade-off. By observing the model performance across different folds, one can assess whether the model is underfitting (high bias) or overfitting (high variance) the data. Also, in research settings, K-fold cross-validation is preferred because it provides a more accurate, reliable and comprehensive evaluation of the model's performance and ensures that the findings are more likely to generalize to new data.
+
+In this study I used Lasso Linear Regression with K-fold Cross-Validation as a features selector to identify most relevant predictors used to fit a linear regression predictive model on stocks price changes data. Two-days stocks price change was chosen because of the high volatility in the stock market making long term predictions hard.
